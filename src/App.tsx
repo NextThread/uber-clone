@@ -28,11 +28,6 @@ const  App:React.FC = () => {
     // }
 
 
-    function isInStandaloneMode() {
-    return (window.matchMedia('(display-mode: standalone)').matches);
-  }
-
-
 
     
 

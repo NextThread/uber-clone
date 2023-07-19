@@ -15,7 +15,7 @@ import Response from "./response";
 import ErrorFallback from "../../Component/ErrorFallBack";
 
 
-const Drop:React.FC = () => {
+const Drop = () => {
   const {origin, end} = useParams();
   const myOrigin = origin.split(",")[0];
   const myEnd = end.split(",")[0];

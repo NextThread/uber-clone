@@ -1,7 +1,7 @@
 import React, {useState,  useEffect, useRef} from "react";
 import {useLocation, useHistory} from "react-router-dom";
 import axios from "axios";
-import { GOOGLE_API_KEY, IP_KEY } from "../const/api";
+// import { GOOGLE_API_KEY, IP_KEY } from "../const/api";
 import { CenterSVG, ClockSVG, SmallCircleSVG, SmallSquareSVG, CancelSVG } from "../const/svg";
 import { useAppDispatch, useAppSelector } from "../../Store/hooks";
 import { updatePickup,updateDestination, updatePickupDisable, updateInitialPosition} from "../../Store/slice";
@@ -21,7 +21,7 @@ const [countryCode, setCountryCode] = useState(null);
 useEffect(() => {
   let mounted = true;
   if(mounted){
-    fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${IP_KEY}`)
+    fetch(`http://api.ipgeolocation.io/ipgeo?apiKey='AIzaSyDnX846EEYsa7iPVXacYUrZsHxX9MDIiN0'`)
     .then( async res => {
       try {
         const result = await res.json();
@@ -53,9 +53,9 @@ const [browserSupported, setBrowserSupported] = useState(false);
  const {data,isFetching, isSuccess} = useGetAddressQuery<any>(currentCordinate);
 
   const fetchPredictions = (input:string) => {
-    const proxy = "https://mighty-island-92084.herokuapp.com/"
+    // const proxy = "https://mighty-island-92084.herokuapp.com/"
     setIsLoading(true);
-    axios(`${proxy}https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&components=country:${countryCode !==null?countryCode:'NG' }&key=${GOOGLE_API_KEY}`, {
+    axios(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&components=country:${countryCode !==null?countryCode:'NG' }&key='AIzaSyDnX846EEYsa7iPVXacYUrZsHxX9MDIiN0'`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

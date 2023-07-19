@@ -1,13 +1,13 @@
 import { initializeApp } from "firebase/app";
 
-const FIREBASE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const firebaseConfig = {
-  apiKey: `${FIREBASE_API_KEY}`,
-  authDomain: "uber-clone-bd051.firebaseapp.com",
-  projectId: "uber-clone-bd051",
-  storageBucket: "uber-clone-bd051.appspot.com",
-  messagingSenderId: "913160782043",
-  appId: "1:913160782043:web:2672ffa7b38a42017f8cfe"
+  apiKey: "AIzaSyA1P460LHlaPLXj0VLnJkd_WgOzzdYdynM",
+  authDomain: "uber-5b2b1.firebaseapp.com",
+  projectId: "uber-5b2b1",
+  storageBucket: "uber-5b2b1.appspot.com",
+  messagingSenderId: "860390637365",
+  appId: "1:860390637365:web:64ab8545546deaf96e967c",
+  measurementId: "G-60F3S93G41"
 };
 
 // Initialize Firebase

@@ -12,7 +12,7 @@ import FormCard from "../../Component/formCard";
 import Header from "../../Component/header";
 
 
-const Pick:React.FC = () => {
+const Pick = () => {
  const dispatch = useAppDispatch();
  const {origin} = useParams();
  const myOrigin = origin.split(",")[0];

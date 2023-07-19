@@ -1,4 +1,4 @@
- import {useEffect, useState} from 'react';
+ import { useState} from 'react';
  import { app } from "../../firebase";
  import { getAuth, GoogleAuthProvider, FacebookAuthProvider,signInWithPopup} from "firebase/auth";
 import { FacebookSVG, LogoSVG, GoogleSVG } from "../../Component/const/svg";
@@ -116,7 +116,8 @@ const Auth = () => {
               <p>By proceeding, you consent to get calls, WhatsApp or SMS messages, including by automated means, from Uber and its affiliates to the number provided.
               </p>
               <p>
-              This site is protected by reCAPTCHA and the Google <a className='underline text-black' href='#'>Privacy Policy</a>  and <a className='underline text-black' href='#'>Terms of Service</a> apply.</p>
+              {/* <a className='underline text-black'>Privacy Policy</a>  and <a className='underline text-black' href='#'>Terms of Service</a> apply. */}
+              </p>
             </div>
             
           </section>

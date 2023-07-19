@@ -15,9 +15,9 @@ const InfoComponent:React.FC<Props> = ({center, place}) => {
         pixelOffset: new google.maps.Size(9, -55),
         closeBoxURL: ``,
         enableEventPropagation: true,
-        boxStyle: {
-          backgroundColor: '#fff',
-        },
+        // boxStyle: {
+        //   backgroundColor: '#fff',
+        // },
         closeBoxMargin: '0px 0px 0px 0px',
         
         isHidden: false,

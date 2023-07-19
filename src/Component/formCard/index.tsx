@@ -33,7 +33,7 @@ const isDestinationDisable:boolean = useAppSelector(state => state.root.destinat
     }
     return () => {
       setIsLoading(false)
-      clearTimeout();
+      // clearTimeout();
     }
   }, [])
   
